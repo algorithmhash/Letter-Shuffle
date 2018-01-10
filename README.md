@@ -1,8 +1,8 @@
-<!doctype html>
-<head>
-</head>
-<body>
+
+
 # Letter-Shuffle
-  <h1 class="shuffleletters"> Just a</h1> <h1 class="shuffleletters">simple letter shuffle.</h1>
-</body>
-</html>
+  <h3 class="shuffleletters"> Just a simple letter shuffle.</h3>
+  
+  <link type="text/javascript" src="js/jquery.shuffle.js"
+
+
