@@ -10,17 +10,17 @@ In this jquery script, this allows you to scramble letters into a word that is p
 
 		if (type == "lowerLetter"){
 			
-			pool = "abcdefghijklmnopqrstuvwxyz0123456789";
+			pool = "letters and number string lowercase";
 		}
 		
 		else if (type == "upperLetter"){
 			
-			pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+			pool = "LETTERS AND NUMBER STRING UPPERCASE";
 		}
 		
 		else if (type == "symbol"){
 			
-			pool = ",.?/\\(^)![]{}*&^%$#'\"";
+			pool = "['5p3c14L Ch@r@c73r5']";
 		} 
    
    
