@@ -117,15 +117,19 @@
 		var pool = "";
 		
 		if (type == "lowerLetter"){
-			pool = "abcdefghijklmnopqrstuvwxyz0123456789";
-		}
-		else if (type == "upperLetter"){
-			pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-		}
-		else if (type == "symbol"){
-			pool = ",.?/\\(^)![]{}*&^%$#'\"";
-		}
 		
+		pool = "letters and number string lowercase"; //change these to have a string of letters, without spacing, of A-Z and 1-0
+	}
+	
+	else if (type == "upperLetter"){
+		
+		pool = "LETTERS AND NUMBER STRING UPPERCASE"; //same as above but make sure the letters are all capitalized
+	}
+	
+	else if (type == "symbol"){
+		
+		pool = "['5p3c14L Ch@r@c73r5']"; //and any special characters that are supported by browsers are accepted in this string
+	} 
 		var arr = pool.split('');
 		return arr[Math.floor(Math.random()*arr.length)];
 	}
