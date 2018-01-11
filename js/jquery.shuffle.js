@@ -4,10 +4,10 @@
 	$.fn.shuffle = function(prop){
 		
 		var options = $.extend({
-			"step"		: 10,			// How many times should the letters be changed
-			"fps"		: 30,			// Frames Per Second
-			"text"		: "", 			// Use this text instead of the contents
-			"callback"	: function(){}	// Run once the animation is complete
+			"step"		: 10,			// How many intervals the letters will be changed
+			"fps"		: 30,			// FPS
+			"text"		: "", 			// Or use this instead of content
+			"callback"	: function(){}	// Run only once after the animation is complete
 		},prop)
 		
 		return this.each(function(){
@@ -91,7 +91,7 @@
 					// the characters we will be working on at once
 					
 					if( i < start+options.step){
-						// Generate a random character at thsi position
+						// Generate a random character at this position
 						strCopy[letters[i]] = randomChar(types[letters[i]]);
 					}
 					else {
