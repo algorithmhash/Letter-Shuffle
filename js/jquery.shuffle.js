@@ -5,7 +5,7 @@
 		
 		var options = $.extend({
 			"step"		: 10,			// How many intervals the letters will be changed
-			"fps"		: 30,			// FPS
+			"fps"		: 30,			// FPS > change this to make it faster or slower
 			"text"		: "", 			// Or use this instead of content
 			"callback"	: function(){}	// Run only once after the animation is complete
 		},prop)
