@@ -1,14 +1,14 @@
 
 (function($){
 	
-	$.fn.shuffle = function(prop){
+	$.fn.shuffle = function(shuff){
 		
-		var options = $.extend({
+		var settings = $.extend({
 			"step"		: 10,			// How many intervals the letters will be changed
 			"fps"		: 30,			// FPS > change this to make it faster or slower
 			"text"		: "", 			// Or use this instead of content
 			"callback"	: function(){}	// Run only once after the animation is complete
-		},prop)
+		},shuff)
 		
 		return this.each(function(){
 			
@@ -25,8 +25,8 @@
 			el.data('animated',true);
 			
 			
-			if(options.text) {
-				str = options.text.split('');
+			if(settings.text) {
+				str = settings.text.split('');
 			}
 			else {
 				str = el.text().split('');
@@ -80,7 +80,7 @@
 					// flag and triggering the callback;
 					
 					el.data('animated',false);
-					options.callback(el);
+					settings.callback(el);
 					return;
 				}
 				
@@ -90,9 +90,9 @@
 					// The start argument and options.step limit
 					// the characters we will be working on at once
 					
-					if( i < start+options.step){
-						// Generate a random character at this position
-						strCopy[letters[i]] = randomChar(types[letters[i]]);
+					if( i < start+settings.step){
+						// Random character generation on this point
+						strCopy[letters[i]] = characterGen(types[letters[i]]);
 					}
 					else {
 						strCopy[letters[i]] = "";
@@ -113,7 +113,7 @@
 		});
 	};
 	
-	function randomChar(type){
+	function characterGen(type){
 		var pool = "";
 		
 		if (type == "lowerLetter"){
