@@ -105,9 +105,9 @@
 					
 					shuffle(start+1);
 					
-				},1000/options.fps);
+				},1000/settings.fps);
 				
-			})(-options.step);
+			})(-settings.step);
 			
 
 		});
@@ -128,7 +128,7 @@
 	
 	else if (type == "symbol"){
 		
-		pool = "['5p3c14L Ch@r@c73r5']"; //and any special characters that are supported by browsers are accepted in this string
+		pool = "['$p3c!$L C=@r@c73r$']"; //and any special characters that are supported by browsers are accepted in this string
 	} 
 		var arr = pool.split('');
 		return arr[Math.floor(Math.random()*arr.length)];
