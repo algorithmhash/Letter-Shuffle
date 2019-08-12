@@ -1,6 +1,7 @@
 
 
 # Letter-Shuffle
+Link to test -> https://algorithmhash.github.io/Letter-Shuffle/
   <h3 class="shuffle"> Just a simple letter shuffle.</h3>
   
   <link type="text/javascript" src="js/jquery.shuffle.js"
